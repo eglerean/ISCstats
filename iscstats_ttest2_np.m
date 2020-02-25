@@ -23,7 +23,7 @@ function stats = iscstats_ttest2_np(data,design,niter)
 % estimated over 200 points if niter<=5000, otherwise it is estimated over
 % round(200*niter/5000) points, for greater precision.
 %
-% The script implements the approach explained by Gang. et al. in 10.1016/j.neuroimage.2016.05.023 and 10.1016/j.neuroimage.2016.08.029
+% The script implements the approach explained by Gang Chen et al. in 10.1016/j.neuroimage.2016.05.023 and 10.1016/j.neuroimage.2016.08.029
 
 % EG 2018-02-10 - enrico.glerean@aalto.fi
 
