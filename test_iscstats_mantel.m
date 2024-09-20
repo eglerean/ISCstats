@@ -14,6 +14,9 @@ NB = 10;
 behav_data=round(20*rand(NB,N));
 iscdata=corr(data);
 behav_sim=corr(behav_data);
+% If one wants to test that the within group similarity is high, but between groups is small:
+% behav_sim=[ones(10,10) zeros(10,10);zeros(10,10) ones(10,10];
+
 [r p]=iscstats_mantel(iscdata,behav_sim,5000,'spearman')
 
 %% case 2, some subjects contain the same signal and the same subjects are more similar behaviourly
